@@ -1,0 +1,52 @@
+/**
+ * 
+ */
+package com.wordpress.testcases;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.Test;
+
+import com.wordpress.Pages.LoginPage;
+import com.wordpress.Pages.chooseBrowser;
+
+/**
+ * @author lipika
+ *
+ */
+public class verifyWordpressLogin {
+
+	@Test
+	public void verifyValidLogin(){
+		
+		/*System.setProperty("webdriver.chrome.driver", "/home/lipika/work/chromedriver");
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://wordpress.com/wp-login.php?redirect_to=https%3A%2F%2Fwordpress.com%2F");*/
+		
+		//variables for URL and Browser
+		String Url ="https://wordpress.com/wp-login.php?redirect_to=https%3A%2F%2Fwordpress.com%2F";
+		String browserName ="chrome";
+		
+
+		WebDriver driver = null;		
+		
+		
+		chooseBrowser browserSelect = new chooseBrowser(driver);
+		driver = browserSelect.userBrowser(browserName ,Url);
+		
+		
+	
+		/*login.typeUsername("chandra.lipika@gmail.com");
+		login.typePassword("sushant@84");
+		login.clickLogin();*/
+		
+		LoginPage login = new LoginPage(driver);
+		login.validLogin("chandra.lipika@gmail.com","sushant@84");
+		
+		driver.quit();
+	}
+}

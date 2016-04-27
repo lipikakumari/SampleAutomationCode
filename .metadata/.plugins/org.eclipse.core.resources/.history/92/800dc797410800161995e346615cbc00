@@ -1,0 +1,26 @@
+package com.wordpress.Pages;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class HomePage {
+	WebDriver driver ;
+	public HomePage(WebDriver driver ){
+		this.driver=driver;
+	}
+	
+	By createPost = By.xpath("//div/a[@title='Create a New Post']");
+	By noSiteYet = By.xpath("//div/h2[@class='empty-content__title']");
+	
+	
+	public WebDriver clickCreatePost(){
+		driver.manage().timeouts().implicitlyWait(20 , TimeUnit.SECONDS);
+		driver.findElement(createPost).click();
+		String nosite= driver.findElement(noSiteYet).getText();
+		System.out.println(nosite);
+		
+		return driver;
+	}
+}
