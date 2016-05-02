@@ -25,8 +25,7 @@ public class LoginPage {
 	By password = By.xpath("//input[@name='pwd' and @id='user_pass']");
 	By rememberMe = By.xpath("//input[@type='checkbox' and @id='rememberme']");
 	By logIn= By.xpath("//input[@type='submit' and @id='wp-submit']");
-	By forgotPassword = By.xpath("//input[@title='Password Lost and Found' and @id='nav']");
-	By wrongPasswordErrorMsg = By.xpath("//div/strong[ERROR]");
+
 	
 	
 	

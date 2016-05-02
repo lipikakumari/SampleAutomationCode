@@ -12,7 +12,7 @@ public class HomePage {
 	}
 	
 	By createPost = By.xpath("//div/header/a[@title='Create a New Post']");
-	By meImage = By.xpath("//div/header/a/span/img[@alt='Me']");
+	By meImage = By.xpath("//div/header[@id ='header']/a[4]");
 	By signOut = By.xpath("//ul/div/button[@title='Sign out of WordPress.com']");
 	
 	

@@ -6,9 +6,8 @@
       <class name="com.wordpress.testcases.verifyWordpressLogin">
         <methods>
           <include name="selectBrowser"/>
-          <include name="verifyInValidUserIdLogin"/>
           <include name="quitBrowser"/>
-          <include name="verifyInValidPasswordLogin"/>
+          <include name="verifyLogout"/>
         </methods>
       </class> <!-- com.wordpress.testcases.verifyWordpressLogin -->
     </classes>
