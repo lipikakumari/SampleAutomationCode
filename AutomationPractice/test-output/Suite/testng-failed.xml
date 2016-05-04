@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.wordpress.TestNgListnerDemo.TestListener"/>
+  </listeners>
   <test name="Test(failed)">
     <classes>
       <class name="com.wordpress.testcases.verifyWordpressLogin">
@@ -9,8 +12,6 @@
           <include name="verifyInValidUserIdLogin"/>
           <include name="quitBrowser"/>
           <include name="verifyInValidPasswordLogin"/>
-          <include name="verifyLogout"/>
-          <include name="verifyValidLogin"/>
         </methods>
       </class> <!-- com.wordpress.testcases.verifyWordpressLogin -->
     </classes>

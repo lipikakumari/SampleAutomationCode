@@ -7,11 +7,16 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.wordpress.Pages.HomePage;
 import com.wordpress.Pages.LoginPage;
 import com.worpress.SelectBrowser.chooseBrowser;
+
+
+
 
 public class UserHasNoSiteCreated {
 	
@@ -22,9 +27,9 @@ public class UserHasNoSiteCreated {
 	WebDriver driver = null;
 	
 	//variables for input parameters
-	String validUserId="chandra.lipika.test@gmail.com";
+/*	String validUserId="chandra.lipika.test@gmail.com";
 	String validPassword="Test@1234";
-
+*/
 	
 	
 	@BeforeMethod
@@ -38,8 +43,18 @@ public class UserHasNoSiteCreated {
 		driver.quit();
 	}
 	
-	@Test
-	public void verifyUserSiteDoNotExist(){	
+	@DataProvider
+	public Object[][] loginData(){
+		
+		Object[][] loginData = new Object[1][2];
+		loginData[0][0]="chandra.lipika.test@gmail.com";
+		loginData[0][1]="Test@1234";
+		return loginData;
+	}
+	
+	
+	@Test (dataProvider="loginData")
+	public void verifyUserSiteDoNotExist(String validUserId,String validPassword){	
 	
 
 		//Testcase variables 

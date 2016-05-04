@@ -1,0 +1,19 @@
+package com.wordpress.data;
+
+import org.testng.annotations.DataProvider;
+
+public class wordpressData {
+	
+	@DataProvider
+	public String[][] UsernamePasswordProvider(){
+		//variables for input parameters
+		String[][] UserPass = new String[2][2];
+		UserPass[0][0]="chandra.lipika.test@gmail.com";
+		UserPass[0][1]="Test@1234";
+		UserPass[1][0]="chandrass.lipika.test@gmail.com";
+		UserPass[1][1]="Tesaat@1234";
+		return UserPass;
+	
+	}
+		
+}

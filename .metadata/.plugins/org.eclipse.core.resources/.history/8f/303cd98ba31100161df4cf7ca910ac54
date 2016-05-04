@@ -1,0 +1,37 @@
+package com.wordpress.Pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+
+public class NewPostPage {
+	WebDriver driver ;
+	public NewPostPage(WebDriver driver ){
+		this.driver=driver;
+	}
+	
+	By newPostTitle = By.xpath("//input[@placeholder='Title']");
+	By newPostFrame = By.xpath("//div/iframe[@id='tinymce-1_ifr']");
+	By newPostBody = By.xpath("//html/body[@id='tinymce']");
+	By publishButton = By.className("editor-ground-control__publish-combo");
+	
+	public WebDriver typeTitle(String title){
+		driver.findElement(newPostTitle).sendKeys(title);
+		return driver;
+	}
+	
+	public WebDriver typeNewPostBody(String body){
+		if(!driver.findElement(newPostFrame).isEnabled())
+		{
+			driver.findElement(newPostTitle).sendKeys(Keys.TAB);
+		
+		}
+		driver.findElement(newPostFrame).sendKeys(body);
+		return driver;
+	}
+	
+	public WebDriver clickPublishButton(){
+		driver.findElement(publishButton).click();;
+		return driver;
+	}
+}

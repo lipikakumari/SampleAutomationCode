@@ -2,24 +2,36 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="128324" started-at="2016-04-28T01:20:12Z" finished-at="2016-04-28T01:22:21Z">
+  <suite name="Default suite" duration-ms="19922" started-at="2016-05-04T06:35:21Z" finished-at="2016-05-04T06:35:41Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="128324" started-at="2016-04-28T01:20:12Z" finished-at="2016-04-28T01:22:21Z">
-      <class name="com.wordpress.testcases.verifyWordpressLogin">
-        <test-method status="PASS" signature="selectBrowser()[pri:0, instance:com.wordpress.testcases.verifyWordpressLogin@4c715560]" name="selectBrowser" is-config="true" duration-ms="14160" started-at="2016-04-28T11:20:12Z" finished-at="2016-04-28T11:20:26Z">
+    <test name="Default test" duration-ms="19922" started-at="2016-05-04T06:35:21Z" finished-at="2016-05-04T06:35:41Z">
+      <class name="com.wordpress.testcases.PublishMyPost">
+        <test-method status="PASS" signature="selectBrowser()[pri:0, instance:com.wordpress.testcases.PublishMyPost@5c5f7f06]" name="selectBrowser" is-config="true" duration-ms="6829" started-at="2016-05-04T16:35:21Z" finished-at="2016-05-04T16:35:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectBrowser -->
-        <test-method status="PASS" signature="verifyLogout()[pri:0, instance:com.wordpress.testcases.verifyWordpressLogin@4c715560]" name="verifyLogout" duration-ms="114044" started-at="2016-04-28T11:20:26Z" finished-at="2016-04-28T11:22:20Z">
+        <test-method status="PASS" signature="publishPost(java.lang.String, java.lang.String)[pri:0, instance:com.wordpress.testcases.PublishMyPost@5c5f7f06]" name="publishPost" duration-ms="12979" started-at="2016-05-04T16:35:28Z" data-provider="loginData" finished-at="2016-05-04T16:35:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chandra.lipika.test@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test@1234]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyLogout -->
-        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:com.wordpress.testcases.verifyWordpressLogin@4c715560]" name="quitBrowser" is-config="true" duration-ms="92" started-at="2016-04-28T11:22:20Z" finished-at="2016-04-28T11:22:21Z">
+        </test-method> <!-- publishPost -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:com.wordpress.testcases.PublishMyPost@5c5f7f06]" name="quitBrowser" is-config="true" duration-ms="90" started-at="2016-05-04T16:35:41Z" finished-at="2016-05-04T16:35:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
-      </class> <!-- com.wordpress.testcases.verifyWordpressLogin -->
+      </class> <!-- com.wordpress.testcases.PublishMyPost -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

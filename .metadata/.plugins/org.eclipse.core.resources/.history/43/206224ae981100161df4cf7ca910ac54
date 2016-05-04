@@ -1,0 +1,19 @@
+package com.wordpress.Pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class NewPostPage {
+	WebDriver driver ;
+	public LoginPage(WebDriver driver ){
+		this.driver=driver;
+	}
+	
+	By newPostTitle = By.xpath("//input[@placeholder='Title']");
+	By newPostBody = By.xpath("//body[@id='tinymce']");
+	
+	public WebDriver typeTitle(String title){
+		driver.findElement(newPostTitle).sendKeys(title);
+		return driver;
+	}
+}

@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.wordpress.testcases.verifyWordpressLogin">
+      <class name="com.wordpress.testcases.PublishMyPost">
         <methods>
-          <include name="selectBrowser"/>
           <include name="quitBrowser"/>
-          <include name="verifyLogout"/>
+          <include name="publishPost" invocation-numbers="0"/>
+          <include name="selectBrowser"/>
         </methods>
-      </class> <!-- com.wordpress.testcases.verifyWordpressLogin -->
+      </class> <!-- com.wordpress.testcases.PublishMyPost -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

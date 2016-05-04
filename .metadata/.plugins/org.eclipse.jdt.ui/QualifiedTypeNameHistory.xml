@@ -7,4 +7,6 @@
 <fullyQualifiedTypeName name="java.util.concurrent.TimeUnit"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.By"/>
 <fullyQualifiedTypeName name="com.wordpress.Pages.HomePage"/>
+<fullyQualifiedTypeName name="org.testng.ITestListener"/>
+<fullyQualifiedTypeName name="org.testng.annotations.DataProvider"/>
 </qualifiedTypeNameHistroy>
