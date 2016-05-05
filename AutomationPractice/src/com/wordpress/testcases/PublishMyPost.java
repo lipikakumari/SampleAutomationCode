@@ -14,11 +14,9 @@ import com.wordpress.Data.WordpressData;
 import com.wordpress.Pages.HomePage;
 import com.wordpress.Pages.LoginPage;
 import com.wordpress.Pages.NewPostPage;
-import com.worpress.SelectBrowser.chooseBrowser;
+import com.wordpress.SelectBrowser.chooseBrowser;
 
 public class PublishMyPost {
-
-	
 
 	//Getting variables for URL and Browser from class WordpressData
 	WordpressData wordpressData = new WordpressData();	
@@ -74,8 +72,9 @@ public class PublishMyPost {
 		
 		//wait 20 second for page to load
 		driver.manage().timeouts().implicitlyWait(20 , TimeUnit.SECONDS);
-		Assert.assertTrue(newPostPage.publishSuccess(), "posted");
-	
+		Assert.assertTrue(newPostPage.publishSuccessMsg().contains("Post"), "posted now by lipika");
+		
+		
 	}
 
 }

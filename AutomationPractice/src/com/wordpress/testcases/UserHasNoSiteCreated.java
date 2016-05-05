@@ -13,7 +13,7 @@ import org.testng.annotations.Test;
 
 import com.wordpress.Pages.HomePage;
 import com.wordpress.Pages.LoginPage;
-import com.worpress.SelectBrowser.chooseBrowser;
+import com.wordpress.SelectBrowser.chooseBrowser;
 
 
 

@@ -13,7 +13,8 @@ public class NewPostPage {
 	By newPostTitle = By.xpath("//input[@placeholder='Title']");
 	By publishButton = By.className("editor-ground-control__publish-combo");
 	By newPostBody=By.xpath(".//div/iframe[@id='tinymce-1_ifr']");
-	By publishSuccess= By.cssSelector(".notice__text>span");
+	By publishSuccess= By.cssSelector("span[data-reactid$='text.0']");
+	By publishSuccess1= By.xpath("//span[@class='notice__text']/span[1]");
 	
 	
 	public WebDriver typeTitle(String title){
@@ -33,6 +34,11 @@ public class NewPostPage {
 	}
 	public boolean publishSuccess(){
 		return driver.findElement(publishSuccess).isDisplayed();
+		
+	}
+	public String publishSuccessMsg(){
+		String msg =driver.findElement(publishSuccess).getText();
+		return msg;
 		
 	}
 	

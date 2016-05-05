@@ -12,7 +12,7 @@ import org.testng.annotations.*;
 
 import com.wordpress.Data.WordpressData;
 import com.wordpress.Pages.*;
-import com.worpress.SelectBrowser.*;
+import com.wordpress.SelectBrowser.*;
 
 
 

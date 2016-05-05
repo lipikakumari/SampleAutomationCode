@@ -1,4 +1,4 @@
-package com.worpress.SelectBrowser;
+package com.wordpress.SelectBrowser;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
