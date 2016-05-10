@@ -11,11 +11,10 @@ public class HomePage {
 		this.driver=driver;
 	}
 	
-	By createPost = By.xpath("//div/header/a[@title='Create a New Post']");
-	By meImage = By.xpath("//div/header[@id ='header']/a[4]");
-	By signOut = By.xpath("//ul/div/button[@title='Sign out of WordPress.com']");
-	
-	
+	By createPost = By.xpath("//div/header/a[@title='Create a New Post']");	
+	By signOut = By.xpath("//ul/div/button[@title='Sign out of WordPress.com']");	
+	//By meImage = By.xpath("//div/header[@id ='header']/a[4]");	
+	By meImage =By.cssSelector("#header>a[title*='profile']");
 	
 	public WebDriver clickCreatePost(){
 		driver.manage().timeouts().implicitlyWait(20 , TimeUnit.SECONDS);

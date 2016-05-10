@@ -3,6 +3,8 @@
  */
 package com.wordpress.Pages;
 
+import java.util.List;
+
 import org.openqa.selenium.*;
 
 /**
@@ -51,6 +53,12 @@ public class LoginPage {
 		driver=clickLogin();
 		return driver;
 	}
-	
+	public int  numberOfLinksOnPage(){
+		
+		List<WebElement> links=driver.findElements(By.tagName("a"));
+		System.out.println("Total links are "+links.size());		
+		return links.size();
+		
+	}
 	
 }

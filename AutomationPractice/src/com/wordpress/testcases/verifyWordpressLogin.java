@@ -55,6 +55,20 @@ public class verifyWordpressLogin {
 		return loginData;
 	}
 	
+	@Test
+	public void verifyTitle(){
+		
+		String expectedTitle="WordPress.com ‹ Log In";
+		String actualTitle=driver.getTitle();
+		String pageSource=driver.getPageSource();
+		
+		Assert.assertTrue(pageSource.contains("expectedTitle"));
+		
+		//Assert.assertEquals(actualTitle, expectedTitle);
+		
+		
+	}
+	
 	// valid userid and password
 	@Test(dataProvider="loginData")
 	public void verifyValidLogin(String validUserId,String validPassword){	
@@ -74,7 +88,7 @@ public class verifyWordpressLogin {
 		
 	}
 	
-	// Invalid password
+	// Invalid password and deliberatly skipping the testcase
 	@Test (dataProvider="loginData")
 	public void verifyInValidPasswordLogin(String validUserId,String validPassword){		
 		
@@ -115,11 +129,12 @@ public class verifyWordpressLogin {
 		driver.manage().timeouts().implicitlyWait(20 , TimeUnit.SECONDS);
 		
 		//Test Assertion
-		String actualText = driver.findElement(By.xpath("//div[@id='login_error']")).getText();
+		String actualText = driver.findElement(By.xpath("//div[@id='login_error']")).getAttribute("innerHTML");
+		System.out.println(actualText);
 		Assert.assertTrue(actualText.contains("Invalid email address"));
 		
 		//Deliberately failing		
-		Assert.fail("Failing the testcase deliberatly");
+		//Assert.fail("Failing the testcase deliberatly");
 			
 	}
 	
