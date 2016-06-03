@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="113360" started-at="2016-06-02T06:43:35Z" finished-at="2016-06-02T06:45:28Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="113360" started-at="2016-06-02T06:43:35Z" finished-at="2016-06-02T06:45:28Z">
+      <class name="com.sydneytesters.tests.CarPageTests">
+        <test-method status="PASS" signature="initializeTestBaseSetup(java.lang.String, java.lang.String)[pri:0, instance:com.sydneytesters.tests.CarPageTests@41258eb3]" name="initializeTestBaseSetup" is-config="true" duration-ms="57001" started-at="2016-06-02T16:43:35Z" finished-at="2016-06-02T16:44:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://sydneytesters.herokuapp.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeTestBaseSetup -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.sydneytesters.tests.CarPageTests@41258eb3]" name="setUp" is-config="true" duration-ms="0" started-at="2016-06-02T16:44:32Z" finished-at="2016-06-02T16:44:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="enterDetailsOfCar_getCarQuote()[pri:0, instance:com.sydneytesters.tests.CarPageTests@41258eb3]" name="enterDetailsOfCar_getCarQuote" duration-ms="6696" started-at="2016-06-02T16:44:32Z" finished-at="2016-06-02T16:44:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterDetailsOfCar_getCarQuote -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sydneytesters.tests.CarPageTests@41258eb3]" name="tearDown" is-config="true" duration-ms="205" started-at="2016-06-02T16:44:39Z" finished-at="2016-06-02T16:44:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.sydneytesters.tests.CarPageTests -->
+      <class name="com.sydneytesters.tests.PaymentPageTest">
+        <test-method status="PASS" signature="initializeTestBaseSetup(java.lang.String, java.lang.String)[pri:0, instance:com.sydneytesters.tests.PaymentPageTest@45cf6814]" name="initializeTestBaseSetup" is-config="true" duration-ms="39681" started-at="2016-06-02T16:44:39Z" finished-at="2016-06-02T16:45:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://sydneytesters.herokuapp.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeTestBaseSetup -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.sydneytesters.tests.PaymentPageTest@45cf6814]" name="setUp" is-config="true" duration-ms="2" started-at="2016-06-02T16:45:18Z" finished-at="2016-06-02T16:45:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="getCarQuote_buyInsurance()[pri:0, instance:com.sydneytesters.tests.PaymentPageTest@45cf6814]" name="getCarQuote_buyInsurance" duration-ms="9689" started-at="2016-06-02T16:45:18Z" finished-at="2016-06-02T16:45:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCarQuote_buyInsurance -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sydneytesters.tests.PaymentPageTest@45cf6814]" name="tearDown" is-config="true" duration-ms="73" started-at="2016-06-02T16:45:28Z" finished-at="2016-06-02T16:45:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.sydneytesters.tests.PaymentPageTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

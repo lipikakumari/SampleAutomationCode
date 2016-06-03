@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <parameter name="appURL" value="http://sydneytesters.herokuapp.com"/>
+  <parameter name="browserType" value="chrome"/>
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.sydneytesters.tests.PaymentPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="getCarQuote_buyInsurance"/>
+          <include name="setUp"/>
+          <include name="initializeTestBaseSetup"/>
+        </methods>
+      </class> <!-- com.sydneytesters.tests.PaymentPageTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

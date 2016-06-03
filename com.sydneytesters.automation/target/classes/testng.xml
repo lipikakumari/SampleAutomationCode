@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+<parameter name="appURL" value="http://sydneytesters.herokuapp.com"/>
+<parameter name="browserType" value="chrome"/>
+
+  <test name="Test">
+    <classes>
+      <class name="com.sydneytesters.tests.CarPageTests"/>
+      <class name="com.sydneytesters.tests.PaymentPageTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

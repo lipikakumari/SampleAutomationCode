@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="47393" started-at="2016-06-02T06:40:34Z" finished-at="2016-06-02T06:41:21Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="47393" started-at="2016-06-02T06:40:34Z" finished-at="2016-06-02T06:41:21Z">
+      <class name="com.sydneytesters.tests.PaymentPageTest">
+        <test-method status="PASS" signature="initializeTestBaseSetup(java.lang.String, java.lang.String)[pri:0, instance:com.sydneytesters.tests.PaymentPageTest@165e9c6c]" name="initializeTestBaseSetup" is-config="true" duration-ms="38219" started-at="2016-06-02T16:40:34Z" finished-at="2016-06-02T16:41:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://sydneytesters.herokuapp.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeTestBaseSetup -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.sydneytesters.tests.PaymentPageTest@165e9c6c]" name="setUp" is-config="true" duration-ms="0" started-at="2016-06-02T16:41:12Z" finished-at="2016-06-02T16:41:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="getCarQuote_buyInsurance()[pri:0, instance:com.sydneytesters.tests.PaymentPageTest@165e9c6c]" name="getCarQuote_buyInsurance" duration-ms="9083" started-at="2016-06-02T16:41:12Z" finished-at="2016-06-02T16:41:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCarQuote_buyInsurance -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sydneytesters.tests.PaymentPageTest@165e9c6c]" name="tearDown" is-config="true" duration-ms="74" started-at="2016-06-02T16:41:21Z" finished-at="2016-06-02T16:41:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.sydneytesters.tests.PaymentPageTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
